@@ -13,6 +13,8 @@ namespace JediTricks
             people.Add("Patrick Heesch", 26);                                                    // Adds the first person to the dictionary with the add function
             people.Add("Karl Lund", 64);
             Console.WriteLine(people["Patrick Heesch"]);                                         // Prints out the Value on the first index, by using a search criteria
+            Console.WriteLine("\n\n");
+
 
             // Another Dictionary used for assignment 3 and 4
             Dictionary<string, bool> characters = new Dictionary<string, bool>()                 
@@ -25,7 +27,7 @@ namespace JediTricks
             characters.Remove("Han");                                                            // Removes Han from the dictionary
             foreach (var hanRemoved in characters)                                               // Runs a foreach loop with a var type
             {
-                Console.WriteLine("Name: " + hanRemoved.Key + ". Jedi? " + hanRemoved.Value.ToString());    //Prints out the contents of the characters Dictionary 
+                Console.WriteLine("Name: " + hanRemoved.Key + ". Jedi? " + hanRemoved.Value.ToString() + "\n");    //Prints out the contents of the characters Dictionary 
             }
             
             Console.ReadKey();
